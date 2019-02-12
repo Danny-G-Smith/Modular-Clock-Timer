@@ -22,7 +22,7 @@
  *
  * Note: Set timerStartingValue, isCountDown, and isMinuteSecond
  *
- * @type {{startTimer, stopTimer, resetTimer, isClockRunning}}
+ * @type {{ll}}
  */
 const timerObject = (function() {
    let timer = 0;
@@ -38,7 +38,6 @@ const timerObject = (function() {
    // IMPORTANT: Set these three variables
    // ******************************************************************
    let timerId = '';
-   debugger;
    display_timer = document.getElementById('display_timer');
    display_timer.innerHTML = timer;
 
