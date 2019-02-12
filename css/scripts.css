@@ -1,0 +1,63 @@
+body, h1, h2 {
+   margin: 0;
+   padding: 0;
+   font-family: sans-serif;
+}
+
+body {
+   background: #333;
+}
+
+.wrapper {
+   width: 90%;
+   margin: 10px auto;
+   display: flex;
+   justify-content: space-around;
+}
+
+.panel {
+   border: 1px solid black;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   text-align: center;
+   font-size: 1.5rem;
+   min-height: 200px;
+   width: 200px;
+   background-color: #ababab;
+}
+
+.timer_panel {
+   justify-content: center;
+}
+
+.button {
+   box-sizing: border-box;
+   border: 1px solid #000;
+}
+
+.button:hover {
+   cursor: pointer;
+   color: #fff;
+   border: 1px solid #fff;
+}
+
+#start_button {
+   background: green;
+}
+
+#stop_button {
+   background: red;
+}
+
+#reset_button {
+   background: yellow;
+}
+
+#clock_check {
+   background: blue;
+}
+
+.start_panel {
+
+}
