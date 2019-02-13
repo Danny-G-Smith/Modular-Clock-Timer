@@ -28,18 +28,17 @@ const timerObject = (function() {
    let timer = 0;
 
    // ******************************************************************
-   // IMPORTANT: Set these three variables
+   // IMPORTANT: Set these six variables
    // ******************************************************************
-   let timerStartingValue = timer = 150; // set starting point in seconds
-   let isCountDown    = true;            // either 0 or count down number
-   let isMinuteSecond = false;
-
-   // ******************************************************************
-   // IMPORTANT: Set these three variables
-   // ******************************************************************
+   let timerStartingValue = timer = 0; // set starting point in seconds (count down)
+   let isCountDown        = false;     // either boolean true or false
+   let isMinuteSecond     = true;      // if count up
    let timerId = '';
    display_timer = document.getElementById('display_timer');
    display_timer.innerHTML = timer;
+   // ******************************************************************
+   // IMPORTANT: Set these six variables
+   // ******************************************************************
 
    /**
     * Public function to setup a countdown or count up timer
