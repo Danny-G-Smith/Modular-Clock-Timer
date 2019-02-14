@@ -27,13 +27,21 @@
 const timerObject = (function() {
    let timer = 0;
 
+
+   // const startTimer = function()
+   // stop_button
+   // const resetTimer = () => {
+   // function isClockRunning() {
+   // function init(startButton, stopButton, resetButton, clockCheck, timerDisplay) {
+
+
    // ******************************************************************
    // IMPORTANT: Set these six variables
    // ******************************************************************
    let timerStartingValue = timer = 0; // set starting point in seconds (count down)
    let isCountDown        = false;     // either boolean true or false
    let isMinuteSecond     = true;      // if count up
-   let timerId = '';
+   let timerId = '';      // timerId is key to understanding this
    display_timer = document.getElementById('display_timer');
    display_timer.innerHTML = timer;
    // ******************************************************************
@@ -61,17 +69,17 @@ const timerObject = (function() {
             //console.log(timer)
          }, 1000);
       }
+      //debugger;
    };
 
    /**
     * Public function to stop timer, used with toggle isClockRunning()
     */
-   function stopTimer() {
       if (isClockRunning()) {
          clearInterval(timerId);
          timerId = '';
       }
-   }
+   });
 
    /**
     * public function to reset the timer
