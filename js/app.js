@@ -27,8 +27,7 @@ const timerObject = ( function() {
          timerId = '';
       }
    }
-
-   const resetTimer = () => {
+.
 
       if ( !isClockRunning() ) {
          timer = 0;
